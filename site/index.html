@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ServiceNow Reporting Portfolio — Nitish Pamarty</title>
+  <meta name="description" content="Self-directed ServiceNow reporting &amp; analytics portfolio: Performance Analytics dashboards, homepages, and a Tableau dashboard built on synthetic ITSM data." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="kicker">Reporting Analyst Portfolio</div>
+      <h1>ServiceNow Reporting &amp; Analytics — a self-directed portfolio project</h1>
+      <p>
+        A working demo of ITSM reporting built the way a Reporting Analyst role expects it:
+        native ServiceNow Performance Analytics dashboards and homepages, a companion Tableau
+        dashboard, and findings translated into recommendations — not just charts.
+      </p>
+      <span class="disclosure">⚠ All data is synthetic, generated on a personal ServiceNow Developer Instance (PDI) — not real client or production data.</span>
+      <div class="hero-links">
+        <a class="btn primary" href="#servicenow">Native ServiceNow</a>
+        <a class="btn secondary" href="#tableau">Tableau Dashboard</a>
+        <a class="btn secondary" href="#findings">Findings</a>
+      </div>
+    </header>
+
+    <section id="servicenow">
+      <div class="section-label">01 — Native ServiceNow</div>
+      <h2>Performance Analytics dashboards &amp; homepages</h2>
+      <p class="section-intro">
+        Built directly in the ServiceNow Reporting and Performance Analytics modules: list reports,
+        a database view joining incident + CI + assignment group, PA indicators/breakdowns, and
+        stakeholder-specific homepages.
+      </p>
+      <div class="shot-grid">
+        <div class="shot-card">
+          <div class="placeholder">Screenshot placeholder<br />PA dashboard — MTTR &amp; SLA compliance</div>
+          <div class="shot-caption">
+            <strong>PA Dashboard — MTTR &amp; SLA Compliance</strong>
+            Indicator trend over the past 60–90 days, broken down by priority.
+          </div>
+        </div>
+        <div class="shot-card">
+          <div class="placeholder">Screenshot placeholder<br />IT Director homepage</div>
+          <div class="shot-caption">
+            <strong>IT Director Homepage</strong>
+            Executive-level scorecard: open backlog, SLA breach rate, change success ratio.
+          </div>
+        </div>
+        <div class="shot-card">
+          <div class="placeholder">Screenshot placeholder<br />Service Desk Manager homepage</div>
+          <div class="shot-caption">
+            <strong>Service Desk Manager Homepage</strong>
+            Operational view: assignment group workload, aging incidents, reopen rate.
+          </div>
+        </div>
+        <div class="shot-card">
+          <div class="placeholder">Screenshot placeholder<br />P2 incidents by application (list report)</div>
+          <div class="shot-caption">
+            <strong>P2 Incidents by Application</strong>
+            List report surfacing a disproportionate share of Priority 2 incidents tied to one CI.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tableau">
+      <div class="section-label">02 — Tableau</div>
+      <h2>Companion Tableau dashboard</h2>
+      <p class="section-intro">
+        Same underlying ITSM data, pulled via the ServiceNow JDBC connector, rebuilt as an
+        interactive Tableau Public dashboard — MTTR, SLA breach rate, backlog by priority, and
+        change success/failure ratio.
+      </p>
+      <div class="tableau-embed" id="tableau-embed-target">
+        Tableau Public embed goes here once the dashboard is published.<br />
+        (Replace this block with the Tableau Public embed snippet.)
+      </div>
+    </section>
+
+    <section id="findings">
+      <div class="section-label">03 — Findings &amp; Recommendations</div>
+      <h2>What the data shows</h2>
+      <p class="section-intro">
+        The point of a reporting analyst isn't the dashboard — it's what you do with it.
+        A couple of examples of translating the synthetic data into a recommendation:
+      </p>
+      <ul class="findings-list">
+        <li>
+          <span class="tag">Finding</span>
+          <p>Placeholder — e.g. "38% of Priority 2 incidents over the trailing 90 days trace back to
+          a single business application, well above its share of overall ticket volume."
+          Recommendation: prioritize a problem-management review of that application's stability
+          before the next release window.</p>
+        </li>
+        <li>
+          <span class="tag">Finding</span>
+          <p>Placeholder — e.g. "12% of incident records were missing category or assignment group
+          at close, undermining trend reporting." Recommendation: enforce required fields at
+          state transition and flag a CMDB data-quality sweep.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <div class="section-label">Built with</div>
+      <ul class="stack-list">
+        <li>ServiceNow PDI</li>
+        <li>Performance Analytics</li>
+        <li>ServiceNow Table API</li>
+        <li>Python</li>
+        <li>Tableau Public</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Synthetic data, personal ServiceNow Developer Instance, self-directed project —
+        built to demonstrate reporting and analytics skills for a Reporting Analyst (ServiceNow) role.
+      </p>
+      <p>
+        <a href="https://github.com/nitishpamarty" target="_blank" rel="noopener">GitHub</a>
+        · <a href="#">LinkedIn</a>
+        · <a href="#">Resume</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
